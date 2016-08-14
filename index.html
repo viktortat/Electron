@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Привет мир!</title>
+  </head>
+  <body>
+    <h1>Привет World!</h1>
+    Мы используем Node <script>document.write(process.versions.node)</script>,
+    Chrome <script>document.write(process.versions.chrome)</script>,
+    и Electron <script>document.write(process.versions.electron)</script>.
+
+    <div>
+      <div style="text-align:center;">
+        <input type="text" placeholder="Выберите файл" id="actual-file" disabled="disabled"/>
+        <input type="button" value="Выбор файла" id="select-file"/>
+      </div>
+      <br><br>
+      <textarea id="content-editor" rows="5"></textarea><br><br>
+      <input type="button" id="save-changes" value="Сохранить изменения"/>
+      <input type="button" id="delete-file" value="Удалить файл"/>
+    </div>
+    <hr>
+    <div style="text-align:center;">
+      <p>
+        The file content will be the same as the editor.
+      </p>
+      <input type="button" value="Выбор файла" id="create-new-file"/>
+    </div>
+    <script src="main2.js"></script>
+  </body>
+</html>
